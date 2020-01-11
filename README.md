@@ -22,6 +22,7 @@ This section defines some JavaScript and React Native naming conventions, which 
       "instance-variables",
       "lifecycle",
       "/^on.+$/",
+      "/^render.+$/",
       "everything-else",
       "render",
     ],
@@ -38,4 +39,35 @@ This section defines some JavaScript and React Native naming conventions, which 
 Since working on many react native products I have seen many many leads always strugulling with the PR contrinutions from the other developers, I have been creating this template that can be applied to bitbucket or github.
 
 ## XXX
- 
+ * [] I am affirming this is my best work ever. 
+
+## Working on multiplatform implementations:
+
+* [ ] Upload gif/SS from Android implementation.
+* [ ] Upload gif/SS from iOS implementation.
+
+## Working on components:
+
+* [ ] Add the story book implementation.
+* [ ] Upload gif/SS from story book implementation.
+
+## Quality
+
+* [ ] No new warnings in tests, storybook, eslint, package check.
+* [ ] I test the suite case for this specific task.
+
+## Unit testing
+
+* [ ] Upload the new coverage in the description.
+* [ ] Keep up to 50% of coverage.
+* [ ] Add snapshot tests specially for components.
+
+## Adding and Updating Packages? (If applicable)
+
+* [ ] Explain an elaborate the package.
+* [ ] Add to the packages list.
+
+## Extra
+
+* [ ] methods that returns JSX starts with `render`
+* [ ] methods that execute action starts with `on`
