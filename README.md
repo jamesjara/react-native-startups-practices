@@ -75,8 +75,64 @@ Since working on many react native products I have seen many many leads always s
 
 # C) Scaffolding
 
-Since working on many react native products I have seen many many leads always strugulling with the PR contrinutions from the other 
+This structure can be different that many of my other products, in this document I'm presenting this one just because of a matter of personal preference, but based on keeping a clean way to structure testing, styles, strings, continuous integration, etc :).
 
-# C) Coding preferences
+```
+.
+├── __mocks__
+│   └── @enhancers
+├── __tests__
+│   └── __snapshots__
+├── android
+├── ios
+├── server
+│   ├── entities
+│   ├── example
+│   └── trips
+├── src
+│   ├── components
+│   │   ├── Input
+│   │   │   ├── __stories__
+│   │   │   └── __tests__
+│   │   │       └── __snapshots__
+│   ├── config
+│   ├── constants
+│   │   ├── actions-types
+│   │   ├── api
+│   │   ├── colors
+│   │   ├── images
+│   │   ├── reducers-names
+│   │   ├── routes
+│   │   ├── schemas
+│   │   ├── strings
+│   │   └── typings
+│   ├── enhancers
+│   │   └── withKeyboardView
+│   ├── navigation
+│   ├── screens
+│   │   ├── Global
+│   │   │   ├── Auth
+│   │   │   │   ├── Home
+│   │   │   │   ├── Login
+│   │   │   │   │   ├── Step1
+│   │   │   │   │   └── Step2
+│   │   │   │   └── Register
+│   │   │   │       ├── Step1
+│   │   │   │       ├── Step2
+│   │   │   │       └── Step3
+│   │   │   ├── Boot
+│   │   │   └── Home
+│   │   └── ActivityFeed
+│   ├── services
+│   │   ├── navigation
+│   │   └── permissions
+│   └── state
+│       ├── entities
+│       └── global
+│           └── auth
+└── storybook
+```
+
+# D) Coding preferences
 
 - Prefer using `PureComponen`t instead of `Component` to use shallow rendering.
