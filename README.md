@@ -251,6 +251,12 @@ pipelines:
 
 ### Unit Testing.
 - Create Unit Testing for any implementation under the `__tests__` folder, for example `components/input/__tests__/`.
+- For Components also add snapshot testing. (+Jest).
+- Create unit testing for Actions.
+- Create unit testing for reducers.
+- Create unit testing for Middlewares.
+- Keep coverage over 80%, Coverage is enforced.
+
 
 # I) UI Components Design (+Storybooks)
 React Native developments should start from the concept, Components, designing components before screens is a very important steps for an organized and efficient development.
