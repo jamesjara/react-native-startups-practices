@@ -1,5 +1,5 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Codecov Coverage](https://img.shields.io/codecov/c/github/jamesjara/react-native-startups-practices.svg?style=popout)](https://codecov.io/gh/jamesjara/react-native-startups-practices)
+[![Codecov Coverage](https://img.shields.io/codecov/c/github/jamesjara/react-native-startups-practices?style=popout)](https://codecov.io/gh/jamesjara/react-native-startups-practices)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md)
 
 
