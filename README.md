@@ -289,6 +289,8 @@ React Native developments should start from the concept, Components, designing c
   - [Normalizr](https://github.com/paularmstrong/normalizr): normalizing data.
   
 ## Redux scalfolding.
+Kepp each entity very atomic, so it can be easly mantained.
+
  ```
  .
 |____example
