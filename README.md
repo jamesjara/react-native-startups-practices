@@ -114,12 +114,7 @@ This structure can be different that many of my other products, in this document
 │   │   │   ├── Auth
 │   │   │   │   ├── Home
 │   │   │   │   ├── Login
-│   │   │   │   │   ├── Step1
-│   │   │   │   │   └── Step2
 │   │   │   │   └── Register
-│   │   │   │       ├── Step1
-│   │   │   │       ├── Step2
-│   │   │   │       └── Step3
 │   │   │   ├── Boot
 │   │   │   └── Home
 │   │   └── ActivityFeed
