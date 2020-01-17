@@ -156,7 +156,7 @@ One phrase, the power of branches, as well a few other rules to keep or git log 
 - Feature: specific development.
 - Hotfix: derived from master branch, it fixes a bug in production and it's merged into master and develop.
 
-## Conventional Commits ( + JIRA ).
+## Conventional Commits (+JIRA).
 - Prefer enforcing properly formatted commit messages.
 - Commit messages must meet the conventional commit format. [conventionalcommits](https://www.conventionalcommits.org/en/v1.0.0/).
 - Commit message must include the JIRA project and JIRA Id task.
@@ -170,7 +170,7 @@ git commit -m "SA-1001: feat(ui) - Added dark theme"
 
 Another one quick phrase, agility with faster feedback. 
 
-## Continuous integretion ( + Bitbucket Pipelines ).
+## Continuous integretion (Bitbucket Pipelines).
 - Enforcing clean and success builds on branches.
 - Protecting your hard-earned code coverage.
 ```
@@ -189,7 +189,7 @@ pipelines:
 ```
 - Git hooks
 
-## Continuous Deployment ( Bitbucket + Bitrise ).
+## Continuous Deployment (Bitbucket + Bitrise).
 
 ## Binaries
 - Feature Branches: Deployment triggered on new commits, IPA and APK binaries.
@@ -218,8 +218,24 @@ pipelines:
 - Create QR Code Page (for QA Testers).
 - Slack, email, JIRA build update.
  
+# G) JIRA Workflow.
 
+The f
+- 
 
+# H) Quality Assurance(QA), Manual & Automated.
+
+### Manual Testing.
+### End to End Testing.
+### Unit Testing.
+
+# I) UI Components Design (+Storybooks)
+React Native developments should start from the concept, Components, designing components before screens is a very important steps for an organized and efficient development.
+
+- Create a storybook per each new component.
+- Build the component in isolation.
+- Implement at least example case by each prop.
+- Document the new component in the components library list.
 
  
   
