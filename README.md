@@ -138,8 +138,9 @@ This structure can be different that many of my other products, in this document
 └── storybook
 ```
 
-# D) Coding preferences.
-
+# D) Code style and linting preferences.
+- Tslint configured with Airbnb styles and some overrides.
+- VSCode Prettier compatible.
 - Prefer using `PureComponen`t instead of `Component` to use shallow rendering.
 - Do not mix types like using a JSX as a boolean.
 - NavigationOptions goes at screens.
@@ -183,6 +184,7 @@ git commit -m "SA-1001: feat(ui) - Added dark theme"
 Another one quick phrase, agility with faster feedback. 
 
 ## Continuous integretion (Bitbucket Pipelines).
+- Enforced linting pre-commit and unit testing pre-push with [husky](https://github.com/typicode/husky)'s hooks.
 - Enforcing clean and success builds on branches.
 - Protecting your hard-earned code coverage.
 ```
@@ -255,6 +257,8 @@ pipelines:
 - e2e test should represent a test suites of functional type.
 
 ### Unit Testing.
+- Unit tests with [Jest](https://github.com/facebook/jest), [Enzyme](https://github.com/airbnb/enzyme) and [react-native-testing-library](https://github.com/callstack/react-native-testing-library).
+- [Codecov](https://codecov.io/): coverage report.
 - Create Unit Testing for any implementation under the `__tests__` folder, for example `components/input/__tests__/`.
 - For Components also add snapshot testing. (+Jest).
 - Create unit testing for Actions.
