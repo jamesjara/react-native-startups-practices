@@ -38,7 +38,7 @@ This section defines some JavaScript and React Native naming conventions, which 
 
 Since working on many react native products I have seen many many leads always strugulling with the PR contrinutions from the other developers, I have been creating this template that can be applied to bitbucket or github.
 
-## XXX
+```
  * [] I am affirming this is my best work ever. 
 
 ## Working on multiplatform implementations:
@@ -71,3 +71,4 @@ Since working on many react native products I have seen many many leads always s
 
 * [ ] methods that returns JSX starts with `render`
 * [ ] methods that execute action starts with `on`
+```
