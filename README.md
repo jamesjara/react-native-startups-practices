@@ -131,3 +131,9 @@ This structure can be different that many of my other products, in this document
 # D) Coding preferences
 
 - Prefer using `PureComponen`t instead of `Component` to use shallow rendering.
+- Do not mix types like using a JSX as a boolean.
+- NavigationOptions goes at screens.
+- Prefer singular alias when importing all, in this way it seems to make more sense when used later on.
+```import * as color from '@constants/colors';
+console.log(color.RED);
+```
