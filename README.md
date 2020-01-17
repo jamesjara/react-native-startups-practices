@@ -304,7 +304,15 @@ Kepp each entity very atomic, so it can be easly mantained.
 | |____index.ts
 | |____action-creators.ts
  ```
-  
+
+# L) Libraries.
+
+| Attempt | #1  | #2  |
+| :---:   | :-: | :-: |
+| Seconds | 301 | 283 |
+
+# M) Components.
+
 
 
 
