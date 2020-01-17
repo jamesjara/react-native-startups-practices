@@ -258,7 +258,7 @@ pipelines:
 - Keep coverage over 80%, Coverage is enforced.
 
 
-# I) UI Components Design (+Storybooks)
+# I) UI Components Design System (+Storybooks)
 React Native developments should start from the concept, Components, designing components before screens is a very important steps for an organized and efficient development.
 
 - Create a storybook per each new component.
@@ -267,7 +267,14 @@ React Native developments should start from the concept, Components, designing c
 - Document the new component in the components library list.
 - Create the story in the root of the component, under the `__stories__` folder, for example `components/input/__stories__/`.
 
- 
+# J) Typescript.
+
+- Prefer Ambient declarations style.
+- In components use type and not interface for state and props definitions.
+- For global shared definitions use interfaces in the `constants/typings` folders.
+- DO NOT use `Any`.
+
+
   
 
 
