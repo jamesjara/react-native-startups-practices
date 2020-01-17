@@ -234,13 +234,13 @@ pipelines:
  
 # G) JIRA Workflow.
 
-### Workflow columns and responsabilities.
+## Workflow columns and responsabilities.
 
 | Column | Responsability  |
 | :---:   | :-: |
 | Todo | Item to be worked |
 
-### Story structue.
+## Story structue.
 - Any story/task must contain the following properties:
 - - Mock: Link to the mock file.
 - - Description: Short description.
@@ -248,7 +248,7 @@ pipelines:
 
 # H) Quality Assurance(QA), Manual & Automated.
 
-### Manual Testing.
+## Manual Testing.
 - Any feature branch requires Manual testing to be approved and then merged.
 - Regression Test must be executed over Develop branch when a milestine is reached or sprint is finished.
 - Manual testing must run over physical devices.
@@ -262,11 +262,11 @@ pipelines:
 | Develop | Development  | QA's   | Binaries APK/IPA |
 | Feature | Development  | Developer and QA's | Ad-hoc and APK |
 
-### End to End Testing.
+## End to End Testing.
 - Create e2e tests under the root folder `__e2e__` folder.
 - e2e test should represent a test suites of functional type.
 
-### Unit Testing.
+## Unit Testing.
 - Unit tests with [Jest](https://github.com/facebook/jest), [Enzyme](https://github.com/airbnb/enzyme) and [react-native-testing-library](https://github.com/callstack/react-native-testing-library).
 - [Codecov](https://codecov.io/): coverage report.
 - Create Unit Testing for any implementation under the `__tests__` folder, for example `components/input/__tests__/`.
@@ -320,10 +320,13 @@ Kepp each entity very atomic, so it can be easly mantained.
 
 # M) Libraries.
 
+Already reviewd set of libraries by category.
+
 ## React native Community
 | Library | Usage | Coverage | License |
 | :---:   | :-:   |  :-:     |    :-:  |
 | Seconds | 301   | 283      |         |
+
 
 ## Amazon webservices
 | Library | Usage | Coverage | License |
@@ -336,48 +339,52 @@ Kepp each entity very atomic, so it can be easly mantained.
 | Seconds | 301   | 283      |         |
 
 
+## Other
+| Library | Usage | Coverage | License |
+| :---:   | :-:   |  :-:     |    :-:  |
+| Seconds | 301   | 283      |         |
 
-    "@react-native-community/async-storage": "^1.6.3",
+
+
+   // UI
+    "react-native-linear-gradient": "^2.5.6",
+    "react-native-dropdownalert": "^4.2.0",
+    "react-native-vector-icons": "^6.6.0",
     "@react-native-community/checkbox": "^0.2.1",
-    "@react-native-community/geolocation": "^2.0.2",
-    "@react-native-community/netinfo": "^5.2.0",
-    "@synapsestudios/react-native-zendesk-support": "^1.1.0-rc.1",
-    
-    
-    "amazon-cognito-identity-js": "^3.2.0",
-    "aws-amplify": "^1.2.4",
-    "aws-amplify-react-native": "^2.2.3",
-    
+    "react-native-check-box": "^2.1.7",
     "formik": "^2.0.4",
     "yup": "^0.27.0"
-    
-    "lodash": "^4.17.15",
-    
-    "react-native-camera": "^3.13.1",
-    "react-native-check-box": "^2.1.7",
-    "react-native-config": "^0.12.0",
-    "react-native-dropdownalert": "^4.2.0",
-    "react-native-gesture-handler": "^1.4.1",
-    "react-native-google-places-autocomplete": "^1.4.0",
-    "react-native-linear-gradient": "^2.5.6",
-    "react-native-maps": "0.26.1",
     "react-native-masked-text": "^1.13.0",
     "react-native-modal": "^11.5.3",
-    "react-native-permissions": "^2.0.5",
-    
-    
+    "react-native-webview": "^7.5.2",
+    "react-native-view-pdf": "^0.10.1",
+    "react-navigation": "^4.0.10",
+    "react-native-google-places-autocomplete": "^1.4.0",
+    "react-native-maps": "0.26.1",
+    "@synapsestudios/react-native-zendesk-support": "^1.1.0-rc.1",
     ? "react-native-reanimated": "^1.4.0",
     ? "react-native-responsive-screen": "^1.3.0",
     ? "react-native-screens": "^1.0.0-alpha.23",
     
+    // NATIVE SERVICES
+    "@react-native-community/geolocation": "^2.0.2",
+    "@react-native-community/netinfo": "^5.2.0",
+    "react-native-permissions": "^2.0.5",
+    "react-native-camera": "^3.13.1",
     "react-native-torch": "^1.1.5",
-    "react-native-vector-icons": "^6.6.0",
-    "react-native-view-pdf": "^0.10.1",
-    "react-native-webview": "^7.5.2",
-    "react-navigation": "^4.0.10",
-  
     
+    // asws
+    "amazon-cognito-identity-js": "^3.2.0",
+    "aws-amplify": "^1.2.4",
+    "aws-amplify-react-native": "^2.2.3",
     
+    // utility
+    "lodash": "^4.17.15",
+    "@react-native-community/async-storage": "^1.6.3",
+    "react-native-config": "^0.12.0",
+    "react-native-gesture-handler": "^1.4.1",
+     
+      
     
 
 # N) Components.
