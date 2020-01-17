@@ -6,7 +6,7 @@ React Native Tips, Notes and best practices
 Hi! I'm James Jara, and this is my personal checklist that I use in **React Native Mansion**. If you want to learn about my point of view, you can read me.
 
 
-# Name Convention
+# A) Name Convention
 
 This section defines some JavaScript and React Native naming conventions, which are split into several sections.
 
@@ -34,7 +34,7 @@ This section defines some JavaScript and React Native naming conventions, which 
 - Methods that return JSX starts with render `renderItem`
 - Methods that executes an actions starts with on `onLogout`
 
-# React Native Pull Request
+# B) React Native Pull Request
 
 Since working on many react native products I have seen many many leads always strugulling with the PR contrinutions from the other developers, I have been creating this template that can be applied to bitbucket or github.
 
@@ -69,6 +69,14 @@ Since working on many react native products I have seen many many leads always s
 
 ## Extra
 
-* [ ] methods that returns JSX starts with `render`
-* [ ] methods that execute action starts with `on`
+* [ ] methods that returns JSX starts with `render`.
+* [ ] methods that execute action starts with `on`.
 ```
+
+# C) Scaffolding
+
+Since working on many react native products I have seen many many leads always strugulling with the PR contrinutions from the other 
+
+# C) Coding preferences
+
+- Prefer using `PureComponen`t instead of `Component` to use shallow rendering.
