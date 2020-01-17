@@ -279,11 +279,13 @@ React Native developments should start from the concept, Components, designing c
 - For global shared definitions use interfaces in the `constants/typings` folders.
 - DO NOT use `Any`.
 
-# K) Redux State Managment.
-
-- Prefer A
-
-
+# K) Redux State Management.
+  - [Redux](https://github.com/reduxjs/redux): predictable state container
+  - [Redux Persist](https://github.com/rt2zz/redux-persist): offline store
+  - [Actions Structure][Redux Standard API-calling Action](https://github.com/agraboso/redux-api-middleware): API well structured action types and action creators.
+  - [Normalizr](https://github.com/paularmstrong/normalizr): normalizing data.
+  - [Selectors](https://github.com/reduxjs/reselect): helpers and selectors to access the reducers data.
+ 
   
 
 
