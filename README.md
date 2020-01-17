@@ -34,6 +34,11 @@ This section defines some JavaScript and React Native naming conventions, which 
 - Methods that return JSX starts with render `renderItem`
 - Methods that executes an actions starts with on `onLogout`
 
+## Folders and files.
+- Prefer lowercase on any folder with exception of RN Screens.
+- Prefer `-` over camelCase in ts, tsx and folders, eg `action-creators.tsx`.
+- Prefer camelCase in React Native screens, eg `Login`.
+
 # B) React Native Pull Request.
 
 Since working on many react native products I have seen many many leads always strugulling with the PR contrinutions from the other developers, I have been creating this template that can be applied to bitbucket or github.
@@ -135,6 +140,8 @@ This structure can be different that many of my other products, in this document
 - NavigationOptions goes at screens.
 - Prefer singular alias when importing all, in this way it seems to make more sense when used later on.
 `import * as color from '@constants/colors'; console.log(color.RED);`
+- Implement configuration calls in `config/` like `AmplifyConfig`, `GoogleMapsConfig`, etc.
+- No literal strings, create the literal string in the constants folder.
 
 
 # E) GIT, Workflow Model.
@@ -220,14 +227,30 @@ pipelines:
  
 # G) JIRA Workflow.
 
-The f
-- 
+### Workflow columns and responsabilities.
+- TBD
+
+### Story structue.
+- Any story/task must contain the following properties:
+- - Mock: Link to the mock file.
+- - Description: Short description.
+- - Test Suite or Acceptance Criteria: link to the test suite steps.
 
 # H) Quality Assurance(QA), Manual & Automated.
 
 ### Manual Testing.
+- Any feature branch requires Manual testing to be approved and then merged.
+- Regression Test must be executed over Develop branch when a milestine is reached or sprint is finished.
+- Manual testing must run over physical devices.
+- Manual testing must run over multi-platform devices iOS and Androd.
+- Tests results must be attached as PDF or inmutable/versioned link in the JIRA task, so in future reference test logs can be reviewed.
+
 ### End to End Testing.
+- Create e2e tests under the root folder `__e2e__` folder.
+- e2e test should represent a test suites of functional type.
+
 ### Unit Testing.
+- Create Unit Testing for any implementation under the `__tests__` folder, for example `components/input/__tests__/`.
 
 # I) UI Components Design (+Storybooks)
 React Native developments should start from the concept, Components, designing components before screens is a very important steps for an organized and efficient development.
@@ -236,6 +259,7 @@ React Native developments should start from the concept, Components, designing c
 - Build the component in isolation.
 - Implement at least example case by each prop.
 - Document the new component in the components library list.
+- Create the story in the root of the component, under the `__stories__` folder, for example `components/input/__stories__/`.
 
  
   
