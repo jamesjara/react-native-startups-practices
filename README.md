@@ -1,3 +1,8 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![Codecov Coverage](https://img.shields.io/codecov/c/github/jamesjara/react-native-startups-practices.svg?style=popout)](https://codecov.io/gh/jamesjara/react-native-startups-practices)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md)
+
+
 # react-native-startups-practices
 React Native Tips, Notes and best practices
 
@@ -273,6 +278,10 @@ React Native developments should start from the concept, Components, designing c
 - In components use type and not interface for state and props definitions.
 - For global shared definitions use interfaces in the `constants/typings` folders.
 - DO NOT use `Any`.
+
+# K) Redux State Managment.
+
+- Prefer A
 
 
   
