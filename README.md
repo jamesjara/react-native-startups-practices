@@ -170,10 +170,11 @@ git commit -m "SA-1001: feat(ui) - Added dark theme"
 
 Another one quick phrase, agility with faster feedback. 
 
-## Continuos integretion ( + Bitbucket Pipelines ).
+## Continuous integretion ( + Bitbucket Pipelines ).
 - Enforcing clean and success builds on branches.
 - Protecting your hard-earned code coverage.
 ```
+# file: bitbucket-pipelines.yml
 image: node:10.15.3
 pipelines:
   default:
@@ -186,8 +187,38 @@ pipelines:
           - yarn run test:package
           - yarn run test
 ```
+- Git hooks
 
-## Continuos Deployment ( + Bitrise ).
+## Continuous Deployment ( Bitbucket + Bitrise ).
+
+## Binaries
+- Feature Branches: Deployment triggered on new commits, IPA and APK binaries.
+- Develop branch: Deployment triggered on new commits, IPA and APK binaries.
+- Stage branch: Deployment triggered on new commits, TestFligth and Alpha Channel binary upload.
+
+## Notifications
+- Feature and develop branches are notified via Slack, Email and Jira automatized comment with the build.
+- Staging and Master builds are notify via the oficial channel, a.k.a iOS TestFligth/App Store and Android Store.
+
+## Bitrise Workflows
+
+### Android Build Steps
+- Autoincrement Semantic App Version.
+- Private Keystore Secure Download.
+- Extra SDK and Tools install.
+- Android Build.
+- Sign APK.
+- Create QR Code Page (for QA Testers).
+- Slack, email, JIRA build update.
+
+### iOS Build Steps
+- Cocoa Pods Install.
+- Certificate and profile installer.
+- XCode Archive.
+- Create QR Code Page (for QA Testers).
+- Slack, email, JIRA build update.
+ 
+
 
 
  
