@@ -235,7 +235,10 @@ pipelines:
 # G) JIRA Workflow.
 
 ### Workflow columns and responsabilities.
-- TBD
+
+| Column | Responsability  |
+| :---:   | :-: |
+| Todo | Item to be worked |
 
 ### Story structue.
 - Any story/task must contain the following properties:
@@ -251,6 +254,13 @@ pipelines:
 - Manual testing must run over physical devices.
 - Manual testing must run over multi-platform devices iOS and Androd.
 - Tests results must be attached as PDF or inmutable/versioned link in the JIRA task, so in future reference test logs can be reviewed.
+
+| Branch | Type  | Testers | How  |
+| :---:  | :-:   | :-:     | :-: |
+| Master | Production  | Final users   | Distribution |
+| Staging | Pre-release  | Stake Holders   | Test-Flight and Android Channels |
+| Develop | Development  | QA's   | Binaries APK/IPA |
+| Feature | Development  | Developer and QA's | Ad-hoc and APK |
 
 ### End to End Testing.
 - Create e2e tests under the root folder `__e2e__` folder.
