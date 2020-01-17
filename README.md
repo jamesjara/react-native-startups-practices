@@ -133,4 +133,32 @@ This structure can be different that many of my other products, in this document
 - Prefer using `PureComponen`t instead of `Component` to use shallow rendering.
 - Do not mix types like using a JSX as a boolean.
 - NavigationOptions goes at screens.
-- Prefer singular alias when importing all, in this way it seems to make more sense when used later on. `import * as color from '@constants/colors'; console.log(color.RED);`
+- Prefer singular alias when importing all, in this way it seems to make more sense when used later on.
+`import * as color from '@constants/colors'; console.log(color.RED);`
+- ASD
+
+
+# E) GIT, Workflow Model
+
+One phrase, the power of branches, as well a few other rules to keep or git log beatifull and clean.
+
+## Main Branches
+- Master: highly stable branch, it is always production-ready.
+- Staging: derived from the develop, used for pre-release testing.
+- Develop: derived from the master, used for integrating different feature branches.
+
+## Temporary Branches
+- Feature: specific development.
+- Hotfix: derived from master branch, it fixes a bug in production and it's merged into master and develop.
+
+## Conventional Commits (+JIRA)
+- Prefer enforcing properly formatted commit messages.
+- Commit messages must meet the conventional commit format. [conventionalcommits](https://www.conventionalcommits.org/en/v1.0.0/).
+- Commit message must include the JIRA project and JIRA Id task.
+```
+git commit -m "SA-1001: fix(login) - Fixed bug on foo"
+git commit -m "SA-1001: feat(profile) - Adds new Widget"
+git commit -m "SA-1001: chore - Updated README"
+git commit -m "SA-1001: feat(ui) - Added new theme"
+```
+
