@@ -332,11 +332,12 @@ Already reviewed set of libraries by category.
 | :---:   | :-:   |  :-:     |    :-:  |
 |  |    |       |         |
    
-# N) Components.
-
+# N) Design system
 | Component | Description |
-| :---:   |   |
-| Seconds |   |
+| :---:   | :-:  |
+|  |  |
+
+
 
 
 
